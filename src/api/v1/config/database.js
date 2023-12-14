@@ -1,23 +1,18 @@
-{
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+module.exports = {
+  development: {
+    dialect: 'postgres',
+    host: 'localhost',
+    port: 5432,
+    username: '',
+    password: '',
+    database: '',
   },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+  production: {
+    dialect: 'postgres',
+    host: 'your_production_host',
+    port: 5432,
+    username: 'your_production_username',
+    password: 'your_production_password',
+    database: 'your_production_database',
   },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
+};
