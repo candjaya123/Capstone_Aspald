@@ -6,16 +6,20 @@ dotenv.config()
 
 const app = express()
 
+const authRouter = require('./api/v1/auth/auth.route');
 
 // middleware
 app.use(express.json())
 app.use(cors())
+
+app.use('/api/v1/auth', authRouter)
 
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) =>{
     res.json({ message: "Server On "})
 })
+
 
 // Error handling
 app.use((err, req, res, next) => {
@@ -40,5 +44,5 @@ const syncDb = async () =>{
 
 app.listen(PORT, () =>{
     console.log(`Server running on port ${PORT}`);
-    syncDb()
+    // syncDb()
 })
