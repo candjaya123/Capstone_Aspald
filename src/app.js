@@ -7,12 +7,14 @@ dotenv.config()
 const app = express()
 
 const authRouter = require('./api/v1/auth/auth.route');
+const userRouter = require('./api/v1/user/user.route');
 
 // middleware
 app.use(express.json())
 app.use(cors())
 
 app.use('/api/v1/auth', authRouter)
+app.use('/api/v1/users', userRouter)
 
 const PORT = process.env.PORT || 3000;
 
