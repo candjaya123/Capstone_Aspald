@@ -3,9 +3,9 @@ module.exports = {
     dialect: 'postgres',
     host: 'localhost',
     port: 5432,
-    username: '',
-    password: '',
-    database: '',
+    username: 'lazzy',
+    password: 'matatahakuna25',
+    database: 'aspald_api',
   },
   production: {
     dialect: 'postgres',
