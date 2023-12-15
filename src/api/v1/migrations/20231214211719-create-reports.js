@@ -8,10 +8,15 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.STRING
       },
-      name: {
+      userId: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
+        reference: {
+          model: 'User',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE',
       },
       description: {
         type: Sequelize.STRING,
