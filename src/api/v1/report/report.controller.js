@@ -47,24 +47,7 @@ const createReport = async (req, res, next) => {
 
         const prediction = await model.predict(tensor).data();
 
-        //map the prediction index
-        const filteredLabels = labels.filter((label, index) => prediction[index] === 1)
-
-        const id = `report-${nanoid(16)}`
-        const { description, lat, lon } = req.body;
-
-        const report = await Reports.create({
-            id,
-            userId: req.user.id,
-            description,
-            damageType: filteredLabels[0],
-            photoUrl: req.file.path,
-            lat,
-            lon,
-            isAcc: false
-        })
-
-        res.json({ report })
+        res.json({ prediction });
 
         // fs.unlinkSync(req.file.path);
     } catch (error) {
