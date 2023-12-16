@@ -38,6 +38,10 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
+      isAcc: {
+        type: Sequelize.BOOLEAN,
+        default: false
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

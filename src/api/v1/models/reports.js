@@ -20,7 +20,8 @@ module.exports = (sequelize, DataTypes) => {
     damageType: DataTypes.STRING,
     photoUrl: DataTypes.STRING,
     lat: DataTypes.FLOAT,
-    lon: DataTypes.FLOAT
+    lon: DataTypes.FLOAT,
+    isAcc: DataTypes.BOOLEAN
   }, {
     sequelize,
     modelName: 'Reports',
