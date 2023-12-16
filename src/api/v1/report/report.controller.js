@@ -99,6 +99,7 @@ const getReports = async (req, res, next) => {
             photoUrl: report.photoUrl,
             lat: report.lat,
             lon: report.lon,
+            isAcc: report.isAcc,
             createdAt: report.createdAt,
             updatedAt: report.updatedAt,
         }))
@@ -142,6 +143,7 @@ const getUserReports = async (req, res, next) => {
             photoUrl: report.photoUrl,
             lat: report.lat,
             lon: report.lon,
+            isAcc: report.isAcc,
             createdAt: report.createdAt,
             updatedAt: report.updatedAt,
         }))
@@ -181,6 +183,7 @@ const getReportDetail = async (req, res, next) => {
             photoUrl: report.photoUrl,
             lat: report.lat,
             lon: report.lon,
+            isAcc: report.isAcc,
             createdAt: report.createdAt,
             updatedAt: report.updatedAt,
         }
