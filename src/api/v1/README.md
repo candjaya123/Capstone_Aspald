@@ -2,6 +2,7 @@ Database configuration
 
 file path : src/api/v1/config/database.js
 
+```javascript
 module.exports = {
   development: {
     dialect: 'postgres',
