@@ -48,5 +48,5 @@ const syncDb = async () =>{
 
 app.listen(PORT, () =>{
     console.log(`Server running on port ${PORT}`);
-    // syncDb()
+    //syncDb()
 })
