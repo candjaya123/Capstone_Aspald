@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/storage": "^7.7.0",
     "@tensorflow/tfjs": "^4.15.0",
     "@tensorflow/tfjs-node": "^4.15.0",
     "bcrypt": "^5.1.1",
