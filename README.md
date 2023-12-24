@@ -1,7 +1,17 @@
 # ASPALD PROJECT
+
+## About The Project
 ASPALD is an application that will be useful for road users to monitor damaged roads around and also ASPALD will provide facilities for users to be able to make reports on the application which will be forwarded to the relevant agencies to immediately deal with the problem of road damage. So that the community and the government can collaborate with each other to improve the road quality.
 
-ASPALD contributor:
+## Repository
+<ul>
+  <li><a href="https://github.com/candjaya123/Capstone_Aspald/tree/api-dev">Bakcend</a></li>
+  <li><a href="https://github.com/alwihabsyi/ASPALD">Mobile</a></li>
+  <li><a href="https://github.com/candjaya123/Capstone_Aspald/tree/main/ML">Machine Learning </a></li>
+</ul> 
+
+## ASPALD contributor
+
 | NAME | BANGKIT ID | UNIVERSITY | ROLE | GITHUB USERNAME |
 | --- | --- | --- | --- | --- |
 | Candra Kusuma Wijaya | M123BSY0128 | Politeknik Elektronika Negeri Surabaya | ML |candjaya123 |
