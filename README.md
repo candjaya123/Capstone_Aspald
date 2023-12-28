@@ -25,25 +25,7 @@ We're using NodeJS for developing this API and deploy it on Google CLoud Platfor
 3. Install and init Google Cloud SDK
 4. Create MySQL instance on Google Cloud SQL
 5. Give your MySQL instance to public access (you can use many ways to connect Cloud Run to Cloud SQL. For easier understanding, we're going to use public IP)
-6. Connect to the instance and create the databases using commands below
-```plaintext
-CREATE TABLE articles (
-id_articles INT NOT NULL AUTO_INCREMENT,
-PRIMARY KEY(id_articles),
-name VARCHAR(255),
-description VARCHAR(1000),
-image VARCHAR(255)
-);
-CREATE TABLE contact_persons (
-id_cp INT NOT NULL AUTO_INCREMENT,
-PRIMARY KEY(id_cp),
-id_articles INT,
-name VARCHAR(255),
-phone VARCHAR(20),
-contact_link VARCHAR(255),
-FOREIGN KEY (id_articles) REFERENCES articles(id_articles)
-);
-```
+6. Connect to the instance and import Cloud SQL or Cloud Bucket
 7. You may fill the database with some data
 8. Clone this repo and go inside the folder
 9. Run commands below
