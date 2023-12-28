@@ -28,21 +28,8 @@ We're using NodeJS for developing this API and deploy it on Google CLoud Platfor
 6. Connect to the instance and import Cloud SQL or Cloud Bucket
 7. You may fill the database with some data
 8. Clone this repo and go inside the folder
-9. Run commands below
-```plaintext
-gcloud builds submit --tag gcr.io/<YOUR-GCP-PROJECT>/Flask-API
-gcloud run deploy aruna \
---image=gcr.io/<YOUR-GCP-PROJECT>/Flask-API \
---set-env-vars=DB_HOST=<DB-IP>,DB_USER=<DB-USER>,DB_PASS=<DB-PASS>,DB_NAME=<DB-NAME> \
---region=asia-southeast2 \
---project=<YOUR-GCP-PROJECT>
-```
-10. Done
-    
-Database configuration
-
-file path : src/api/v1/config/database.js
-
+9. Create Database
+    file path : src/api/v1/config/database.js
 ```javascript
 module.exports = {
   development: {
@@ -62,3 +49,14 @@ module.exports = {
     database: 'your_production_database',
   },
 };
+
+11. Run commands below
+```plaintext
+gcloud builds submit --tag gcr.io/<YOUR-GCP-PROJECT>/Flask-API
+gcloud run deploy aruna \
+--image=gcr.io/<YOUR-GCP-PROJECT>/Flask-API \
+--set-env-vars=DB_HOST=<DB-IP>,DB_USER=<DB-USER>,DB_PASS=<DB-PASS>,DB_NAME=<DB-NAME> \
+--region=asia-southeast2 \
+--project=<YOUR-GCP-PROJECT>
+```
+10. Done
