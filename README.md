@@ -9,7 +9,7 @@
 
 Bangkit 2023 Capstone Project <br>
 
-We're using Python Flask for developing this API and deploy it on Google CLoud Platform.
+We're using NodeJS for developing this API and deploy it on Google CLoud Platform.
 
 ## GCP Architecture
 ![gcp_architecture](assets/gcp-architecture.png)
