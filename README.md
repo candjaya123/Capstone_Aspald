@@ -58,5 +58,5 @@ gcloud run deploy aruna \
 --set-env-vars=DB_HOST=<DB-IP>,DB_USER=<DB-USER>,DB_PASS=<DB-PASS>,DB_NAME=<DB-NAME> \
 --region=asia-southeast2 \
 --project=<YOUR-GCP-PROJECT>
-```
+
 10. Done
