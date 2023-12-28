@@ -5,8 +5,8 @@ ASPALD is an application that will be useful for road users to monitor damaged r
 
 ## Repository
 <ul>
-  <li><a href="https://github.com/candjaya123/Capstone_Aspald/tree/api-dev">Bakcend</a></li>
-  <li><a href="https://github.com/alwihabsyi/ASPALD">Mobile</a></li>
+  <li><a href="https://github.com/candjaya123/Capstone_Aspald/tree/api-dev">Cloud Computing</a></li>
+  <li><a href="https://github.com/alwihabsyi/ASPALD">Mobile Development</a></li>
   <li><a href="https://github.com/candjaya123/Capstone_Aspald/tree/main/ML">Machine Learning </a></li>
 </ul> 
 
