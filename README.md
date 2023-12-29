@@ -11,6 +11,9 @@ Bangkit 2023 Capstone Project <br>
 
 We're using NodeJS for developing this API and deploy it on Google CLoud Platform.
 
+### Documentation
+[Aspald API Documentation](https://documenter.getpostman.com/view/10017926/2s9Ykn8MkW)
+
 ## GCP Architecture
 ![gcp_architecture](assets/gcp-architecture.png)
 
