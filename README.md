@@ -15,9 +15,6 @@ We're using NodeJS for developing this API and deploy it on Google CLoud Platfor
 ![gcp_architecture](assets/gcp-architecture.png)
 
 
-### Documentation
-[Aruna API Documentation](https://pandarl.notion.site/Aruna-API-Documentation-c63074cec06241ef870e79f623ce5f86?pvs=4)
-
 ## Replicate our work
 
 1. Create new Google Cloud project
